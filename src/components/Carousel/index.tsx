@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-
 import {
   Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
   CarouselCaption,
+  CarouselIndicators,
+  CarouselItem,
 } from "reactstrap";
 
 const items = [
@@ -21,6 +19,16 @@ const items = [
   },
   {
     src: "https://images-na.ssl-images-amazon.com/images/I/816S1xdqVEL._AC_SY450_.jpg",
+    altText: "",
+    caption: "",
+  },
+  {
+    src: "https://a-static.mlcdn.com.br/618x463/mouse-gamer-redragon-m608-inquisitor-rgb-3200-dpi-6-botoes/multicontroldistribuidora/6008a0f9210adc0189b1e51b/b07e751f0079ae815cc29320cd2e362c.jpg",
+    altText: "",
+    caption: "",
+  },
+  {
+    src: "https://images9.kabum.com.br/produtos/fotos/130379/placa-de-video-msi-nvidia-geforce-rtx-3070-gaming-x-trio_1603911655_g.jpg",
     altText: "",
     caption: "",
   },
@@ -50,11 +58,12 @@ const CarouselSale = () => {
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        onExiting={() => setAnimating(true)}
+        onExiting={() => setAnimating(false)}
         onExited={() => setAnimating(false)}
+        onClick={() => next()}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} height="40%" width="500px" />
+        <img src={item.src} alt={item.altText} height="30%" width="400px" />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}

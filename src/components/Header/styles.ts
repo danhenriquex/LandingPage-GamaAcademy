@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { theme } from "../../global/theme";
+import BdStyle from "../../assets/black-wallpaper.jpg";
 
 export const Container = styled.div`
   width: 100%;
   height: 100px;
-  background: ${theme.colors.secondary};
+  background-image: url(${BdStyle});
 `;
 
 export const Content = styled.div`
@@ -24,7 +25,6 @@ export const Title = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   gap: 15px;
-  /* line-height: 200; */
 `;
 
 export const ButtonLogin = styled.div`

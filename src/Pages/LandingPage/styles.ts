@@ -5,6 +5,7 @@ import { theme } from "../../global/theme";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  min-width: 555px;
 `;
 
 export const Content = styled.div`
@@ -19,9 +20,15 @@ export const Body = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  #inputEmail {
+    margin-top: 25px;
+  }
 `;
 
 export const Title = styled.div`
+  width: 100%;
+  text-align: center;
   font-size: 40px;
   font-family: "Roboto", sans-serif;
   color: ${theme.colors.white};
@@ -46,4 +53,10 @@ export const SubTitle = styled.div`
   font-family: "Roboto", sans-serif;
   color: ${theme.colors.primary};
   text-align: center;
+`;
+
+export const InputEmail = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

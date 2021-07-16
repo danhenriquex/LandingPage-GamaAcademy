@@ -1,1 +1,2 @@
-command = "CI= npm run build"
+[build]
+  functions = 'functions'
