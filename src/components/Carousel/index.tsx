@@ -58,8 +58,8 @@ const CarouselSale = () => {
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        onExiting={() => setAnimating(false)}
-        onExited={() => setAnimating(false)}
+        // onExiting={() => setAnimating(false)}
+        // onExited={() => setAnimating(false)}
         onClick={() => next()}
         key={item.src}
       >
@@ -73,7 +73,12 @@ const CarouselSale = () => {
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      keyboard={false}
+    >
       <CarouselIndicators
         items={items}
         activeIndex={activeIndex}
