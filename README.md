@@ -35,11 +35,11 @@
 
 ---
 
-## ⚙️ How it works
+## ⚙️ How it Works
 
-- [x] Usuário pode digitar seu e-mail para receber novidades.
-- [x] No computador o usuário pode deixar o mouse em cima do produto para vê-lo, caso contrário os itens continuaram passando.
-- [x] No celular o usuário pode deslizar para ver os itens.
+- [x] User can enter their email to receive news.
+- [x] On the computer, the user can leave the mouse over the product to see it, otherwise the items continued to pass.
+- [x] On the mobile the user can swipe to see the items.
 
 ---
 

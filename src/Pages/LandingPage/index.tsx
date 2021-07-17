@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import { Header, Card, Input } from "../../components";
+import { toast, ToastContainer } from "react-toastify";
+import { Card, Header, Input } from "../../components";
 import CarouselSale from "../../components/Carousel";
-import { ToastContainer, toast } from "react-toastify";
-import { BlackSale } from "../../assets";
 import {
+  Body,
+  Carousel,
   Container,
   Content,
-  Body,
-  Title,
-  Carousel,
   Footer,
-  SubTitle,
   InputEmail,
+  SubTitle,
+  Title,
 } from "./styles";
 
 export function LandingPage() {
@@ -55,15 +54,6 @@ export function LandingPage() {
             <SubTitle>
               Digite seu e-mail para receber novidades de promoções.
             </SubTitle>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img src={BlackSale} width="100px" height="100px" />
-            </div>
             <InputEmail onSubmit={handleSendEmails}>
               <Input
                 placeholder="Digite seu e-mail"
