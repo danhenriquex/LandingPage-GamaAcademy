@@ -35,7 +35,7 @@
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ How it works
 
 - [x] Usuário pode digitar seu e-mail para receber novidades.
 - [x] No computador o usuário pode deixar o mouse em cima do produto para vê-lo, caso contrário os itens continuaram passando.
