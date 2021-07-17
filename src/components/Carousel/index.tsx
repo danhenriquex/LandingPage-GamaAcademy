@@ -8,7 +8,7 @@ import {
 
 const items = [
   {
-    src: "https://a-static.mlcdn.com.br/618x463/liquidificador-mondial-turbo-l-900-fr-copo-vermelho-com-filtro-05-velocidades-900w/magazineluiza/021722800/b5b64e63ef6eb1c31d776263db23d12d.jpg",
+    src: "https://images-soubarato.b2w.io/produtos/01/00/img/1335823/4/1335823455_1GG.jpg",
     altText: "",
     caption: "",
   },
