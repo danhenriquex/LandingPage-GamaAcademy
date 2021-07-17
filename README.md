@@ -77,6 +77,8 @@ $ yarn start
 
 </div>
 
+---
+
 <div id="tecnologias">
 
 ### 🛠 Tech Stack
