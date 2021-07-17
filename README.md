@@ -1,4 +1,4 @@
-<h1 align="center">🔶 Black Friday</h1>
+<h1 align="center">🔶 <a href="https://black-friday-academy.netlify.app">Black Friday</a></h1>
 <p align="center" id="objetivo">Landing Page for the first challenge of Gama Academy.</p>
 
 <div align="center" gap="10px">
@@ -24,6 +24,12 @@
 <h4 align="center"> 
 	🚧  React App 🚀 Finished...  🚧
 </h4>
+
+---
+
+ <h3 align="center"><a href="https://black-friday-academy.netlify.app">https://black-friday-academy.netlify.app</a></h3>
+
+---
 
 <div style='margin: 20px' id="layout">
   <h1 align="center">
