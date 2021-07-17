@@ -1,46 +1,112 @@
-# Getting Started with Create React App
+<h1 align="center">🔶 Black Friday</h1>
+<p align="center" id="objetivo">Landing Page for the first challenge of Gama Academy.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center" gap="10px">
+  <img src="https://img.shields.io/github/languages/count/danhenriquex/LandingPage-GamaAcademy?logo=React"/>
+  <img src="https://img.shields.io/github/languages/code-size/danhenriquex/LandingPage-GamaAcademy"/>
+  <img src="https://img.shields.io/github/last-commit/danhenriquex/LandingPage-GamaAcademy"/>
+  <img src="https://img.shields.io/badge/Feito%20por-Danilo%20Henrique-7245F3"/>
+</div>
 
-## Available Scripts
+<h1 align="center">
+    <a href="https://reactnative.dev/"> <img src="./src/screenshots/react.ico" width="22" height="22"/> React</a>
+</h1>
+<p align="center">🚀 A JavaScript library for creating user interfaces.</p>
 
-In the project directory, you can run:
+<p align="center">
+ <a href="#layout">Layout</a> •
+ <a href="#features">Features</a> •
+ <a href="#roadmap">How it works</a> • 
+ <a href="#tecnologias">Tech Stack</a> • 
+ <a href="#author">Author</a>
+</p>
 
-### `yarn start`
+<h4 align="center"> 
+	🚧  React App 🚀 Finished...  🚧
+</h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div style='margin: 20px' id="layout">
+  <h1 align="center">
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/screenshots/black-friday.png"/>
+  </h1>
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<div id="features">
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Funcionalidades
 
-### `yarn build`
+- [x] Usuário pode digitar seu e-mail para receber novidades.
+- [x] No computador o usuário pode deixar o mouse em cima do produto para vê-lo, caso contrário os itens continuaram passando.
+- [x] No celular o usuário pode deslizar para ver os itens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div id="roadmap">
 
-### `yarn eject`
+### Pre-requisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Before you begin, you will need to have the following tools installed on your machine:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🎲 Running the web application (FrontEnd)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clone this repository
+$ git clone git@github.com:danhenriquex/LandingPage-GamaAcademy.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Access the project folder in your terminal/cmd
+$ cd LandingPage-GamaAcademy
 
-## Learn More
+# Install the dependencies
+$ yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the application in development mode
+$ yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+```
+
+
+</div>
+
+</div>
+
+<div id="tecnologias">
+
+### 🛠 Tech Stack
+
+The following tools were used in the construction of the project:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [styled](https://styled-components.com)
+</div>
+
+### Author
+
+---
+
+<!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
+
+<div align="left" id="author">
+
+<a href="https://github.com/danhenriquex">
+  <img src="https://github.com/danhenriquex.png" width="100" height="100" style="border-radius: 50%"/>
+</a>
+
+<!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="danilo-henrique-santana"><a class="LI-simple-link" href='https://br.linkedin.com/in/danilo-henrique-santana?trk=profile-badge'>Danilo Henrique</a></div> -->
+</div>
+
+<div style="margin-top: 20px" >
+  <a href="https://www.linkedin.com/in/danilo-henrique-480032167/">
+    <img  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</div>
+

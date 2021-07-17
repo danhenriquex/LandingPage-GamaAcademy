@@ -36,6 +36,7 @@ const items = [
 
 const CarouselSale = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  // eslint-disable-next-line
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
@@ -60,7 +61,6 @@ const CarouselSale = () => {
       <CarouselItem
         // onExiting={() => setAnimating(false)}
         // onExited={() => setAnimating(false)}
-        onClick={() => next()}
         key={item.src}
       >
         <img src={item.src} alt={item.altText} height="30%" width="400px" />

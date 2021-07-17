@@ -2,25 +2,18 @@ import React, { InputHTMLAttributes } from "react";
 import { IoMailSharp } from "react-icons/io5";
 import { Icons, InputContainer, InputStyle } from "./styles";
 
-import { ToastContainer, toast } from "react-toastify";
-
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   placeholder: string;
+  handleFunction: () => void;
 };
 
-export function Input({ placeholder, ...rest }: InputProps) {
-  const notify = () =>
-    toast("E-mail enviado com sucesso!", {
-      type: "dark",
-    });
-
+export function Input({ placeholder, handleFunction, ...rest }: InputProps) {
   return (
     <InputContainer>
       <InputStyle placeholder={placeholder} {...rest} autoFocus type="text" />
-      <Icons onClick={notify}>
+      <Icons onClick={handleFunction}>
         <IoMailSharp className="icon" />
       </Icons>
-      <ToastContainer />
     </InputContainer>
   );
 }

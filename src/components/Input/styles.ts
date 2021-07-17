@@ -29,6 +29,10 @@ export const InputContainer = styled.span`
     color: ${theme.colors.primary};
     margin-bottom: 5px;
   }
+
+  @media only screen and (max-width: 1198px) {
+    width: 50%;
+  }
 `;
 
 export const Icons = styled.button`
@@ -41,4 +45,8 @@ export const Icons = styled.button`
   cursor: pointer;
   height: 50px;
   width: 50px;
+
+  @media only screen and (max-width: 1198px) {
+    margin-right: 200px;
+  }
 `;
