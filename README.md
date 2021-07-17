@@ -22,7 +22,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧  React App 🚀 Finished...  🚧
+	🚧  React App 🚀 Finished 🚧
 </h4>
 
 ---
