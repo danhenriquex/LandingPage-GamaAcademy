@@ -19,6 +19,8 @@ export function LandingPage() {
   const [emails, setEmails] = useState<string[]>([]);
   const [email, setEmail] = useState<string>("");
 
+  console.log("test");
+
   function handleSendEmails(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
