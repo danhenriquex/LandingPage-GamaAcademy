@@ -41,7 +41,7 @@
 
 ---
 
-## ⚙️ How it Works
+## ⚙️ Features
 
 - [x] User can enter their email to receive news. Just type your email and press enter or click on the email icon.
 - [x] On the computer, the user can leave the mouse over the product to see it, otherwise the items continued to pass.
