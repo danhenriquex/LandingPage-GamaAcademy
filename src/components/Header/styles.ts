@@ -25,10 +25,18 @@ export const Title = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   gap: 15px;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 18px;
+  }
 `;
 
 export const ButtonLogin = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 500px) {
+    width: 20%
+  }
 `;

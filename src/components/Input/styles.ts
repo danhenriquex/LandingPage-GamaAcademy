@@ -1,5 +1,37 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../global/theme";
+
+interface InputContainerProps {
+  error: boolean;
+}
+
+export const Container = styled.div<InputContainerProps>`
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    padding-top: 10px;
+    text-align: center;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 11px;
+    }
+  }
+
+  ${({ error }) =>
+    error &&
+    css`
+      border-color: #ea3e4f;
+      color: #ea3e4f;
+
+      :hover {
+        border-color: #ea3e4f;
+      }
+    `}
+`;
 
 export const InputStyle = styled.input`
   border-radius: 10px;
@@ -28,8 +60,6 @@ export const InputContainer = styled.span`
 
   .icon {
     color: ${theme.colors.primary};
-    /* margin-bottom: 5px;
-    margin-right: 16px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +84,4 @@ export const Icons = styled.button`
   cursor: pointer;
   height: 50px;
   width: 50px;
-
-  /* @media only screen and (max-width: 1198px) {
-    margin-right: 200px;
-  } */
 `;

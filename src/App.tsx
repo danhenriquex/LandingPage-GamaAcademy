@@ -1,6 +1,6 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { LandingPage } from "./Pages";
+import { LandingPage } from "./pages";
 
 function App() {
   return (

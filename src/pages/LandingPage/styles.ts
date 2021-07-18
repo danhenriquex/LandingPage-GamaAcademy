@@ -32,6 +32,10 @@ export const Title = styled.div`
   font-size: 40px;
   font-family: "Roboto", sans-serif;
   color: ${theme.colors.white};
+
+  @media only screen and (max-width: 500px) {
+    font-size: 25px;
+  }
 `;
 
 export const Carousel = styled.div`
@@ -53,10 +57,15 @@ export const SubTitle = styled.div`
   font-family: "Roboto", sans-serif;
   color: ${theme.colors.primary};
   text-align: center;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 11px;
+  }
 `;
 
 export const InputEmail = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 `;

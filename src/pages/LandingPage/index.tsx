@@ -18,11 +18,12 @@ export function LandingPage() {
   // eslint-disable-next-line
   const [emails, setEmails] = useState<string[]>([]);
   const [email, setEmail] = useState<string>("");
+  const [error, setError] = useState(false);
 
   function handleSendEmails(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (email !== "") {
+    if (email.includes("@") && email !== "") {
       emails.push(email);
 
       localStorage.setItem("@blackfriday:email", JSON.stringify(emails));
@@ -33,6 +34,9 @@ export function LandingPage() {
         type: "dark",
         progressStyle: { backgroundColor: `${theme.colors.primary}` },
       });
+      setError(false);
+    } else {
+      setError(true);
     }
   }
 
@@ -59,6 +63,8 @@ export function LandingPage() {
                 onChange={(event) => handleEmail(event)}
                 value={email}
                 autoFocus
+                error={error}
+                message="E-mail inválido. Verique se você digitou corretamente."
               />
             </InputEmail>
           </div>
