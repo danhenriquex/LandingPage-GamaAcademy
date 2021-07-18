@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import { Card, Header, Input } from "../../components";
+import { Header, Input } from "../../components";
 import CarouselSale from "../../components/Carousel";
 import {
   Body,
@@ -65,7 +65,6 @@ export function LandingPage() {
               />
             </InputEmail>
           </div>
-          <Card />
         </Body>
       </Content>
       <Footer>

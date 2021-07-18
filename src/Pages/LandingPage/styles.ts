@@ -5,7 +5,7 @@ import { theme } from "../../global/theme";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  min-width: 555px;
+  min-width: 326px;
 `;
 
 export const Content = styled.div`
