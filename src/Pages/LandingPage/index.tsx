@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import { Header, Input } from "../../components";
 import CarouselSale from "../../components/Carousel";
+import { theme } from "../../global/theme";
 import {
   Body,
   Carousel,
@@ -18,14 +19,6 @@ export function LandingPage() {
   const [emails, setEmails] = useState<string[]>([]);
   const [email, setEmail] = useState<string>("");
 
-  const notify = () => {
-    if (email !== "") {
-      toast("E-mail enviado com sucesso!", {
-        type: "dark",
-      });
-    }
-  };
-
   function handleSendEmails(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -35,6 +28,11 @@ export function LandingPage() {
       localStorage.setItem("@blackfriday:email", JSON.stringify(emails));
 
       setEmail("");
+
+      toast("E-mail enviado com sucesso!", {
+        type: "dark",
+        progressStyle: { backgroundColor: `${theme.colors.primary}` },
+      });
     }
   }
 
@@ -61,7 +59,6 @@ export function LandingPage() {
                 onChange={(event) => handleEmail(event)}
                 value={email}
                 autoFocus
-                handleFunction={notify}
               />
             </InputEmail>
           </div>

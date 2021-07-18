@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
 import { Container, ButtonLogin, Content, Title } from "./styles";
 import { IoRocketSharp } from "react-icons/io5";
 import { Button } from "../Button";
 
-export function Header() {
+export function HeaderComponent() {
   const [login, setLogin] = useState(false);
 
   function handleLogin() {
@@ -31,3 +31,5 @@ export function Header() {
     </Container>
   );
 }
+
+export const Header = memo(HeaderComponent);
