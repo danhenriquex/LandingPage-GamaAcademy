@@ -68,7 +68,8 @@ const CarouselSale = () => {
       activeIndex={activeIndex}
       next={next}
       previous={previous}
-      keyboard={false}
+      interval="2000"
+      ride="carousel"
     >
       <CarouselIndicators
         items={items}
