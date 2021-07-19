@@ -45,11 +45,6 @@ export const Carousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media only screen and (max-width: 500px) {
-    width: 80%;
-    height: 80%;
-  }
 `;
 
 export const Footer = styled.div`

@@ -5,7 +5,6 @@ import {
   CarouselIndicators,
   CarouselItem,
 } from "reactstrap";
-import { Image } from "./styles";
 
 const items = [
   {
@@ -55,9 +54,7 @@ const CarouselSale = () => {
   const slides = items.map((item) => {
     return (
       <CarouselItem key={item.src}>
-        <Image>
-          <img src={item.src} alt={item.altText} height="30%" width="400px" />
-        </Image>
+        <img src={item.src} alt={item.altText} height="30%" width="400px" />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
@@ -67,22 +64,20 @@ const CarouselSale = () => {
   });
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <Carousel
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      interval="2000"
+      ride="carousel"
+    >
+      <CarouselIndicators
+        items={items}
         activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-        interval="2000"
-        ride="carousel"
-      >
-        <CarouselIndicators
-          items={items}
-          activeIndex={activeIndex}
-          onClickHandler={goToIndex}
-        />
-        {slides}
-      </Carousel>
-    </div>
+        onClickHandler={goToIndex}
+      />
+      {slides}
+    </Carousel>
   );
 };
 
