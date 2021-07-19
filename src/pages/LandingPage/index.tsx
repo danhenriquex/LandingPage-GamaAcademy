@@ -64,7 +64,7 @@ export function LandingPage() {
                 value={email}
                 autoFocus
                 error={error}
-                message="E-mail inválido. Verique se você digitou corretamente."
+                message="E-mail inválido. Verifique se você digitou corretamente."
               />
             </InputEmail>
           </div>
